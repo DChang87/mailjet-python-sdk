@@ -2,7 +2,7 @@ import requests
 import json
 
 
-class ApiConfiguration():
+class MailjetApi():
 
 	def __init__(self,user='',password='',currentList='',currentUser=''):
 

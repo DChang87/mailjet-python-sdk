@@ -1,6 +1,6 @@
-from ApiConfiguration import ApiConfiguration
+from MailjetApi import MailjetApi
 
-obj = ApiConfiguration(user = '', password = '')
+obj = MailjetApi(user = '', password = '')
 
 # ListID = 19
 
@@ -14,4 +14,16 @@ obj = ApiConfiguration(user = '', password = '')
 
 # View a contactlist 
 
-print obj.view_contactlist( contactslist_id = 3)
+# print obj.view_contactlist( contactslist_id = 3)
+
+obj.send_email(
+			fromm 	= 	'yo@dharwinperez.com',
+			to 		=	'dhararon@hotmail.com',
+			subject =	'Mailjet Python SDK',
+			message = 	'''This is the link to github. 
+
+			https://github.com/sparkyguardian/mailjet-python-sdk
+							
+			Send with mailjet python sdk :D
+						'''		
+		)
