@@ -16,7 +16,7 @@ obj = MailjetApi(user = '', password = '')
 
 # print obj.view_contactlist( contactslist_id = 3)
 
-obj.send_email(
+print obj.send_email(
 			fromm 	= 	'yo@dharwinperez.com',
 			to 		=	'dhararon@hotmail.com',
 			subject =	'Mailjet Python SDK',

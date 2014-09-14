@@ -212,9 +212,8 @@ class MailjetApi():
 
 		try:
 
-			requests.post(url, auth=(self.user, self.password),data=data)
-
-			if str(request.status_code) == '200':
+			respond = requests.post(url, auth=(self.user, self.password),data=data)
+			if str(respond.status_code) == '200':
 
 				result = {
 					'status':'ok',
